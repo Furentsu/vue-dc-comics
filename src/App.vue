@@ -26,12 +26,7 @@ export default {
 
 <style lang="scss">
 @import "./style/variables.scss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./style/general-rules.scss";
 
 #app {
   font-family: '$primaryFont', Helvetica, Arial, sans-serif;

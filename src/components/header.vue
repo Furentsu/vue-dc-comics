@@ -1,23 +1,26 @@
 <template>
   <div>
-      <header>
-          <img src="../assets/img/dc-logo.png" alt="DC's logo">
+        <header>
+            <div class="general-container">
+                <img src="../assets/img/dc-logo.png" alt="DC's logo">
 
-      <nav>
-          <ul>
-              <li><a href="#">Characters</a></li>
-              <li><a href="#">Comics</a></li>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">TV</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Collectibles</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Fans</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Shop</a></li>
-          </ul>
-      </nav>
-      </header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Characters</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Collectibles</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Fans</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+        </header>
   </div>
 </template>
 
@@ -30,27 +33,32 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid red; // Debug !!
-}
+header { 
+    height: 150px;
 
-ul {
-    display: flex;
-    list-style: none;
+    .general-container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
 
-    li {
-        font-size: 1rem;
-        text-transform: uppercase;
-        padding: 0 10px;
-    }
+        ul {
+            display: flex;
+            list-style: none;
 
-        li a {
-            text-decoration: none;
-            color: $primaryBlack;
+            li {
+                font-size: 1rem;
+                text-transform: uppercase;
+                padding: 0 10px;
+            }
+
+                li a {
+                    text-decoration: none;
+                    color: $primaryBlack;
+                }
         }
+    }
 }
+
+
 </style>
