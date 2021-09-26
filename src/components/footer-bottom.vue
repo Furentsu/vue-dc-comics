@@ -48,9 +48,12 @@ footer {
                 color: $primaryWhite;
                 text-transform: uppercase;
                 border: 3px solid $primaryBlue;
+                transition: all 300ms, ease-in-out 300ms;
 
                 &:hover {
                     cursor: pointer;
+                    color: $primaryBlue;
+                    border-color: $primaryWhite;
                 }
             }
         }
@@ -73,11 +76,22 @@ footer {
 
                 li {
                     padding: 0 10px;
-                }
 
                     a {
                         text-decoration: none;
+
+                        img {
+                            transition: all 250ms, ease-in-out 250ms;
+                            border: 1px solid transparent;
+
+                            &:hover {
+                                background-color: $primaryWhite;
+                                border: 1px solid $primaryWhite;
+                                border-radius: 2em;
+                            }
+                        }
                     }
+                }
             }
         }
     }

@@ -184,12 +184,18 @@ footer {
                 li {
                     font-size: 1rem;
                     padding: 5px 0;
-                }
 
                     a {
                         text-decoration: none;
                         color: $secondaryGrey;
+                        transition: all 180ms, ease-in-out 180ms;
+
+                        &:hover {
+                            color: $primaryWhite;
+                        }
                     }
+                }
+
             }
         }
         

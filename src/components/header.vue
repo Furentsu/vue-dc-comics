@@ -80,9 +80,8 @@ header {
 
         nav {
             height: 100%;
-        }
 
-        ul {
+            ul {
             display: flex;
             align-items: center;
             height: 100%;
@@ -95,7 +94,6 @@ header {
                 font-size: 1rem;
                 text-transform: uppercase;
                 padding: 0 10px;
-            }
 
                 a {
                     display: flex;
@@ -103,12 +101,16 @@ header {
                     text-decoration: none;
                     border-bottom: 5px solid transparent;
                     color: $primaryBlack;
+                    transition: all 250ms, ease-in-out 250ms;
 
                     &:hover {
                         border-bottom: 5px solid $primaryBlue;
                     }
 
                 }
+            }
+
+            }
         }
     }
 }
