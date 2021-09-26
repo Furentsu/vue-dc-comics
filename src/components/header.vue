@@ -64,7 +64,7 @@ export default {
 @import "../style/variables.scss";
 
 header { 
-    height: 130px;
+    height: 120px;
 
     .general-container {
         display: flex;

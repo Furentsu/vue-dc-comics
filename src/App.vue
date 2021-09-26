@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Main />
+    <BluePanel />
     <FooterTop />
     <FooterBottom />
   </div>
@@ -10,6 +11,7 @@
 <script>
 import Header from './components/header.vue'
 import Main from './components/main.vue'
+import BluePanel from './components/blue-panel.vue'
 import FooterTop from './components/footer-top.vue'
 import FooterBottom from './components/footer-bottom.vue'
 
@@ -18,6 +20,7 @@ export default {
   components: {
     Header,
     Main,
+    BluePanel,
     FooterTop,
     FooterBottom
   }

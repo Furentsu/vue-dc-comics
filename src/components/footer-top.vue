@@ -50,7 +50,7 @@
 
 <script>
 export default {
-    name:'footer-op',
+    name:'footer-top',
     data: function() { 
         return {
             dcComics: [
