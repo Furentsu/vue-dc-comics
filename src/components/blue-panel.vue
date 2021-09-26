@@ -2,10 +2,14 @@
   <div>
       <section>
             <div class="general-container">
-              <div class="content" v-for="(element, index) in panelContent" :key="index">
-                  <img :src="element.image" :alt="element.alt">
-                  <h3>{{element.text}}</h3>
-              </div>
+                <ul>
+                    <li v-for="(element, index) in panelContent" :key="index">
+                        <a href="#">
+                            <img :src="element.image" :alt="element.alt">
+                            <h3>{{element.text}}</h3>
+                        </a>
+                    </li>
+                </ul>
             </div>
       </section>
   </div>
@@ -57,25 +61,42 @@ section {
 
     .general-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 100%;
 
-        .content {
+        ul {
             display: flex;
-            justify-content: space-between;
-            color: $primaryWhite;
             align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+            list-style: none;
 
-            img {
-                width: 38px;
-            }
+            li {
+                display: flex;
+                justify-content: space-between;
+                color: $primaryWhite;
+                align-items: center;
 
-            h3 {
-                font-size: 1rem;
-                padding: 0 25px;
-                text-transform: uppercase;
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $primaryWhite;
+
+                    img {
+                        width: 40px;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                        padding: 0 25px;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
+
     }
 }
 </style>
