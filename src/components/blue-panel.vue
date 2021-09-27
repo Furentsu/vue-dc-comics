@@ -1,18 +1,17 @@
 <template>
-  <div>
-      <section>
-            <div class="general-container">
-                <ul>
-                    <li v-for="(element, index) in panelContent" :key="index">
-                        <a href="#">
-                            <img :src="element.image" :alt="element.alt">
-                            <h3>{{element.text}}</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-      </section>
-  </div>
+    <section>
+        <div class="general-container">
+            <ul>
+                <li v-for="(element, index) in panelContent" :key="index">
+                    <a href="#">
+                        <img :src="element.image" :alt="element.alt">
+                        <h3>{{element.text}}</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 </template>
 
 <script>

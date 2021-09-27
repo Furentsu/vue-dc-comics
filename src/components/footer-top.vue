@@ -1,51 +1,50 @@
 <template>
-  <div>
-      <footer>
-          <div class="general-container">
-              <div class="footer-left">
-                  <div class="footer-list-left">
-                        <h2>DC COMICS</h2>
-                        <ul>
-                            <li v-for="(link, index) in dcComics" :key="index">
-                                <a href="#">{{link.text}}</a>
-                            </li>
-                            
-                        </ul>
-                        <h2>SHOP</h2>
-                        <ul>
-                            <li v-for="(link, index) in shopDc" :key="index">
-                                <a href="#">{{link.text}}</a>
-                            </li>
-                            
-                        </ul>  
-                  </div>
+    <footer>
+        <div class="general-container">
+            <div class="footer-left">
+                <div class="footer-list-left">
+                    <h2>DC COMICS</h2>
+                    <ul>
+                        <li v-for="(link, index) in dcComics" :key="index">
+                            <a href="#">{{link.text}}</a>
+                        </li>
+                        
+                    </ul>
+                    <h2>SHOP</h2>
+                    <ul>
+                        <li v-for="(link, index) in shopDc" :key="index">
+                            <a href="#">{{link.text}}</a>
+                        </li>
+                        
+                    </ul>  
+                </div>
 
-                  <div class="footer-list-center">
-                        <h2>DC</h2>
-                        <ul>
-                            <li v-for="(link, index) in dc" :key="index">
-                                <a href="#">{{link.text}}</a>
-                            </li>
-                            
-                        </ul>
-                  </div>
+                <div class="footer-list-center">
+                    <h2>DC</h2>
+                    <ul>
+                        <li v-for="(link, index) in dc" :key="index">
+                            <a href="#">{{link.text}}</a>
+                        </li>
+                        
+                    </ul>
+                </div>
 
-                  <div class="footer-list-right">
-                        <h2>SITES</h2>
-                        <ul>
-                            <li v-for="(link, index) in sites" :key="index">
-                                <a href="#">{{link.text}}</a>
-                            </li>
-                            
-                        </ul>
-                  </div>
-              </div>
-              <div class="footer-right">
-                  <img src="../assets/img/dc-logo-bg.png" alt="DC logo">
-              </div>
-          </div>
-      </footer>
-  </div>
+                <div class="footer-list-right">
+                    <h2>SITES</h2>
+                    <ul>
+                        <li v-for="(link, index) in sites" :key="index">
+                            <a href="#">{{link.text}}</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="../assets/img/dc-logo-bg.png" alt="DC logo">
+            </div>
+        </div>
+    </footer>
+
 </template>
 
 <script>
@@ -199,8 +198,12 @@ footer {
             }
         }
         
-        .footer-right img {
-            width: 80%;
+        .footer-right {
+            text-align: right;
+
+            img {
+                width: 80%;
+            }
         }
 
     }

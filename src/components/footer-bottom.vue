@@ -1,23 +1,21 @@
 <template>
-  <div>
-      <footer>
-          <div class="general-container">
-              <div class="footer-left">
-                  <button type="button">Sign-up Now!</button>
-              </div>
-              <div class="footer-right">
-                  <h2>Follow us</h2>
-                  <ul>
-                      <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook's logo"></a></li>
-                      <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter's logo"></a></li>
-                      <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube's logo"></a></li>
-                      <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest's logo"></a></li>
-                      <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope's logo"></a></li>
-                  </ul>
-              </div>
-          </div>
-      </footer>
-  </div>
+    <footer>
+        <div class="general-container">
+            <div class="footer-left">
+                <button type="button">Sign-up Now!</button>
+            </div>
+            <div class="footer-right">
+                <h2>Follow us</h2>
+                <ul>
+                    <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook's logo"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter's logo"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube's logo"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest's logo"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope's logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <script>

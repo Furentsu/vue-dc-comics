@@ -1,20 +1,22 @@
 <template>
-    <div>
         <section>
             <div class="general-container">
-                <div class="card" v-for="(card, index) in mainContent" :key="index">
-                    <img :src="card.thumb">
-                    <h4>{{card.series}}</h4>
-                </div>
-                <button type="button">Load more</button>
+                <Card v-for="(card, index) in mainContent" :key="index" :seriesImage="card.thumb" :seriesName="card.series"/>
             </div>
+            <button type="button">Load more</button>
         </section>
-    </div>
 </template>
 
+
 <script>
+import Card from '../components/card.vue'
+
+
 export default {
     name: 'main',
+    components: {
+        Card,
+    },
     data: function() {
         return {
             mainContent: [
@@ -90,10 +92,11 @@ export default {
                     "series": "Catwoman",
                     "type": "graphic novel"
                 }
-                ]
+            ]
         }
     }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -101,49 +104,31 @@ export default {
 
 section {
     background-color: $primaryBlack;
+    text-align: center;
     padding: 50px 0;
 
     .general-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
 
-        .card {
-            flex-basis: calc(100% / 6);
-            text-align: center;
+    button {
+        width: fit-content;
+        font-size: 1rem;
+        padding: 12px 50px;
+        background-color: $primaryBlue;
+        color: $primaryWhite;
+        text-transform: uppercase;
+        border: none;
+        transition: all 300ms, ease-in-out 300ms;
 
-            img {
-                height: 75%;
-            }
-
-            h4 {
-                padding: 10px;
-                color: white;
-            }
-        }
-
-        button {
-            width: fit-content;
-            font-size: 1rem;
-            padding: 12px 50px;
-            background-color: $primaryBlue;
-            color: $primaryWhite;
-            text-transform: uppercase;
-            border: none;
-            transition: all 300ms, ease-in-out 300ms;
-
-            &:hover {
-                    cursor: pointer;
-                    color: $primaryBlue;
-                    background-color: $primaryWhite;
-                }
+        &:hover {
+            cursor: pointer;
+            color: $primaryBlue;
+            background-color: $primaryWhite;
         }
     }
 }
 
-// <div class="card" v-for="(card, index) in mainContent" :key="index">
-//                     <img :src="card.thumb" alt="">
-
-//                 </div>
 </style>
-

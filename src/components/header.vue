@@ -1,21 +1,19 @@
 <template>
-  <div>
-        <header>
-            <div class="general-container">
-                <a href="#" id="logo"><img src="../assets/img/dc-logo.png" alt="DC's logo"></a>
-                
+    <header>
+        <div class="general-container">
+            <a href="#" id="logo">
+                <img src="../assets/img/dc-logo.png" alt="DC's logo">
+            </a>
 
-                <nav>
-                    <ul>
-                        <li v-for="(menu, index) in menu" :key="index">
-                                <a href="#">{{menu.text}}</a>
-                            </li>
-                    </ul>
-                </nav>
-            </div>
-          
-        </header>
-  </div>
+            <nav>
+                <ul>
+                    <li v-for="(menu, index) in menu" :key="index">
+                        <a href="#">{{menu.text}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </template>
 
 <script>
