@@ -89,7 +89,7 @@ section {
                     }
 
                     h3 {
-                        font-size: 1rem;
+                        font-size: .9rem;
                         padding: 0 25px;
                         text-transform: uppercase;
                     }
